@@ -3,7 +3,7 @@
 This is supplementary code written for this MSci project. The anomaly cancellation equations for a general non-Abelian group $G = H \times U(1)^n $
 in 2D are systems of homogenous quadratic Diophantine equations for the $n$ sets of charges.
 A single Diophantine equation ($n=1$) can be solved using the Method of Chords. Code was produced to generate solutions using this method. Code was also produced
-using a brute force method to compare efficiency.
+using a brute force method to compare efficiency. Unsurprisingly, the brute force scan was hugely less efficient.
 
 For larger systems of equations, solutions may or may not exist. Code was produced to scan through solutions and check if any linearly independent pair
 satisfies the $n=2$ case. None were found.
