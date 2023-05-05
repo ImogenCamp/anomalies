@@ -1,6 +1,4 @@
-# anomalies
-
-## Anomaly cancellation in 2D quantum field theories
+# Anomaly cancellation in 2D quantum field theories
 
 This is supplementary code written for this MSci project. The anomaly cancellation equations for a general non-Abelian group $G = H \times U(1)^n $
 in 2D are systems of homogenous quadratic Diophantine equations for the $n$ sets of charges.
@@ -21,6 +19,8 @@ have an initial solution of the correct dimension.
 
 The two methods are compared analytically in a Mathematica file for one example, and the sets of solutions of the two different parameterisations are compared
 in a Python file for two examples. The overlap is relatively small in both cases, but this is unsurprising.
+
+I may upload the final report for this project at a later date.
 
 
 
