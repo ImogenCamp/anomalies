@@ -30,7 +30,7 @@ matrix method\
 
 Cell["\<\
 The goal of this code is to analytically compare the solutions from the \
-Method of Chords and the generalised orthogonal method. Ideally, there will \
+Method of Chords and the generalised orthogonal matrix method. Ideally, there will \
 be an analytical one-one correspondence.\
 \>", "Text",
  CellChangeTimes->{{3.892303829573538*^9, 
