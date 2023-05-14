@@ -26,10 +26,11 @@ of the orthogonal group $$O = \\{\mathsf{O} \in \mathcal{M}(\mathbb{Q}) | \maths
 using a generalisation of the Cayley parameterisation, which is done in a Mathematica file for two examples. Note that this holds for any $n$, provided we
 have an initial solution of the correct dimension.
 
-The two methods are compared analytically in a Mathematica file for one example, and the sets of solutions of the two different parameterisations are compared
-in a Python file for two examples. The overlap is relatively small in both cases, but this is unsurprising (there are, after all, infinitely many rational number with which to parameterise...).
+To generate such an initial solution, an algorithm was developed to explicitly perform a Witt decomposition. This is loosely based upon [[2]](#2), but is modified such that we have 2 initial solutions, rather than 1. This allows us to extract hyperbolic planes more easily. The code also does not use such sophisticated methods for generating solutions, as a simple scan suffices for our cases of interest.
 
-I may upload the final report for this project at a later date.
+The two methods are compared analytically in a Mathematica file for one example, and the sets of solutions of the two different parameterisations are compared
+in a Python file for two examples. The overlap is relatively small in both cases, but this is unsurprising (there are, after all, infinitely many rational numbers with which to parameterise...).
+
 
 ## Technologies
 
@@ -37,17 +38,18 @@ I may upload the final report for this project at a later date.
 * Mathematica version: 13.2
 
 ## List of Files
-* **method-of-chords.py**: finds integer solutions to via parameterisation $x^2 + y^2 = 2z^2$
-* **brute-force.py**: scans over integers for solutions to $x^2 + y^2 = 2z^2$
-* **two-gauge-fields.py**:  scans for $n=2$ solutions to $x^2 + y^2 = 2z^2$
-* **witt-index.py**: calculates the Witt index $W$ for an arbitrary rational quadratic form
-* method-of-chords-2.py: an example of using the method of chords in a Witt decomposed system
-        $$x^2 + y^2 - w^2 - 3z^2 = 0$$
-* **orthogonal-matrices-4x4.py**: an example of using the generalised orthogonal matrix method in a Witt decomposed system $$x^2 + y^2 - w^2 - 3z^2 = 0$$ to generate generalised orthogonal matrices
-* **orthogonal-matrices-final.nb**: parameterisation of orthogonal matrices to produce all maximal isotropic subspaces for examples with $W=1,2$
-* **orthogonal-MoC-comparison.py**: comparison of solution sets produced by the Method of Chords and the generalised orthogonal matrix method
-* **second-example-MoC-matrix-comparison.py**: comparison of solution sets in a second case
-* **MoC-orthogonal-matrix-comparison-analytical.nb**: analytical comparison of the Method of Chords and the generalised orthogonal matrix method for $$x^2 + y^2 - w^2 - 3z^2 = 0$$ 
+* **method-of-chords.py**: Finds integer solutions to via parameterisation $x^2 + y^2 = 2z^2$.
+* **brute-force.py**: Scans over integers for solutions to $x^2 + y^2 = 2z^2$.
+* **two-gauge-fields.py**:  Scans for $n=2$ solutions to $x^2 + y^2 = 2z^2$.
+* **witt-index.py**: Calculates the Witt index $W$ for an arbitrary rational quadratic form.
+* **method-of-chords-2.py**: An example of using the method of chords in a Witt decomposed system
+        $$x^2 + y^2 - w^2 - 3z^2 = 0.$$
+* **maximal_isotropic_subspace.py**: Implementation of an algorithm developed to explicitly perform a Witt decomposition.
+* **orthogonal-matrices-4x4.py**: An example of using the generalised orthogonal matrix method in a Witt decomposed system $$x^2 + y^2 - w^2 - 3z^2 = 0$$ to generate generalised orthogonal matrices.
+* **orthogonal-matrices-final.nb**: Parameterisation of orthogonal matrices to produce all maximal isotropic subspaces for examples with $W=1,2$.
+* **orthogonal-MoC-comparison.py**: Comparison of solution sets produced by the Method of Chords and the generalised orthogonal matrix method.
+* **second-example-MoC-matrix-comparison.py**: Comparison of solution sets in a second case.
+* **MoC-orthogonal-matrix-comparison-analytical.nb**: Analytical comparison of the Method of Chords and the generalised orthogonal matrix method for $$x^2 + y^2 - w^2 - 3z^2 = 0.$$
 
 
 
@@ -55,4 +57,9 @@ I may upload the final report for this project at a later date.
 <a id="1">[1]</a> 
 Beale and Harrison (1989). 
 A computation of the Witt index for rational quadratic forms.
-Aequationes Mathematicae, Vol. 38, 86--98.
+*Aequationes Mathematicae*, Vol. 38, 86--98.
+
+<a id="2">[2]</a> 
+D. Simon (2005). 
+Quadratic equations in dimensions 4, 5 and more.
+*Preprint*.
