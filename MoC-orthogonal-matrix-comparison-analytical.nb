@@ -2209,7 +2209,7 @@ Cell[BoxData[
 }, Open  ]],
 
 Cell["\<\
-etc. and we see that we can make the correspondence given in Appendix E of \
+etc. and we see that we can make the correspondence given in Appendix F of \
 the report.\
 \>", "Text",
  CellChangeTimes->{{3.892304139267419*^9, 
